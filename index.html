@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Live News Today - Breaking News & Updates</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <i class="fas fa-newspaper"></i>
+                    <h1>Live News Today</h1>
+                </div>
+                <div class="search-bar">
+                    <input type="text" id="searchInput" placeholder="Search news...">
+                    <button id="searchBtn"><i class="fas fa-search"></i></button>
+                </div>
+                <nav class="nav-icons">
+                    <button class="theme-toggle" id="themeToggle"><i class="fas fa-moon"></i></button>
+                    <button class="notification-btn"><i class="fas fa-bell"></i></button>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <ul class="nav-menu">
+                <li><a href="#" class="nav-link active" data-category="all">All News</a></li>
+                <li><a href="#" class="nav-link" data-category="politics">Politics</a></li>
+                <li><a href="#" class="nav-link" data-category="business">Business</a></li>
+                <li><a href="#" class="nav-link" data-category="technology">Technology</a></li>
+                <li><a href="#" class="nav-link" data-category="sports">Sports</a></li>
+                <li><a href="#" class="nav-link" data-category="entertainment">Entertainment</a></li>
+                <li><a href="#" class="nav-link" data-category="health">Health</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Live Ticker -->
+    <div class="live-ticker">
+        <div class="ticker-label">🔴 LIVE</div>
+        <div class="ticker-content">
+            <p id="tickerText">Breaking News: Markets rally on positive economic data...</p>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <main class="container">
+        <!-- Featured News Section -->
+        <section class="featured-section">
+            <h2>Featured News</h2>
+            <div class="featured-grid" id="featuredNews">
+                <!-- Featured articles will be inserted here -->
+            </div>
+        </section>
+
+        <!-- News Grid -->
+        <section class="news-section">
+            <h2>Latest News</h2>
+            <div class="news-grid" id="newsGrid">
+                <!-- News articles will be inserted here -->
+            </div>
+        </section>
+
+        <!-- Load More Button -->
+        <div class="load-more-container">
+            <button class="load-more-btn" id="loadMoreBtn">Load More News</button>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>About Us</h3>
+                    <p>Live News Today brings you the latest breaking news and updates from around the world in real-time.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Contact</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Follow Us</h3>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Live News Today. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Modal for Full Article -->
+    <div class="modal" id="articleModal">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <div class="modal-body" id="modalBody">
+                <!-- Article details will be inserted here -->
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
